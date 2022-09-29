@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    android:translationZ="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/history_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sep 28, 2022 02:30:00 UTC"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dollar_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="13dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/icon_background"
+                app:srcCompat="@drawable/ic_dollar" />
+
+            <TextView
+                android:id="@+id/dollar_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/dollar_icon"
+                android:fontFamily="sans-serif-medium"
+                android:text="Rate"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dollar_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/dollar_value"
+                android:background="@drawable/icon_background"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:text="1 Bitcoin"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pound_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="13dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/icon_background"
+                app:srcCompat="@drawable/ic_pound" />
+
+            <TextView
+                android:id="@+id/pound_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/pound_icon"
+                android:fontFamily="sans-serif-medium"
+                android:text="Rate"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pound_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/pound_value"
+                android:background="@drawable/icon_background"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:text="1 Bitcoin"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/euro_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="13dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/icon_background"
+                app:srcCompat="@drawable/ic_euro" />
+
+            <TextView
+                android:id="@+id/euro_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/euro_icon"
+                android:fontFamily="sans-serif-medium"
+                android:text="Rate"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/euro_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/euro_value"
+                android:background="@drawable/icon_background"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:text="1 Bitcoin"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

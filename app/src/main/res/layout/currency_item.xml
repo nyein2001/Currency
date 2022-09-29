@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/currency_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="13dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/icon_background"
+        android:src="@drawable/ic_dollar"/>
+
+    <TextView
+        android:id="@+id/currency_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/currency_icon"
+        android:fontFamily="sans-serif-medium"
+        android:text="Rate"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/currency_value"
+        android:layout_below="@+id/currency_value"
+        android:fontFamily="sans-serif-light"
+        android:text="Time"
+        android:textSize="11sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
