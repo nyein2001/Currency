@@ -94,6 +94,10 @@ public class ConverterFragment extends Fragment implements TextWatcher, AdapterV
         currencyDatabase = FirebaseDatabase.getInstance().getReference("history");
         Query lastQuery = currencyDatabase.orderByKey().limitToLast(1);
 
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
         lastQuery.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -118,6 +122,9 @@ public class ConverterFragment extends Fragment implements TextWatcher, AdapterV
         initDollarValue = sharedPreferences.getFloat("DOLLAR",0);
         initPoundValue = sharedPreferences.getFloat("POUND",0);
         initEuroValue = sharedPreferences.getFloat("EURO",0);
+                new  Handler().postDelayed(this,5000);
+            }
+        },0);
 
     }
 
