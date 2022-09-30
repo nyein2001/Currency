@@ -1,4 +1,4 @@
-<p>Currency Exchange live data, Calculation and Displaying currency history using REST API</p>
+<p>Currency Exchange live data, Calculation and Displaying currency history</p>
 <p><br></p>
 <ol>
     <li>&nbsp; Displaying of BTC&apos;s currency as this rate 3 rate (USD, GBP, EUR) from API</li>
